@@ -8,6 +8,18 @@ paths:
 
 # Frontend Development Rules
 
+## Design Inspiration (MANDATORY — check before building)
+Before creating or modifying any UI component or page:
+
+1. Check if a design brief exists: read `.claude/skills/design-inspiration/DESIGN_BRIEF.md`
+   - If it exists, use it as the style guide for all decisions below
+2. If no brief, list reference files: `ls .claude/skills/design-inspiration/references/`
+   - If references exist (excluding README.md), read each one and extract color, spacing, and component style patterns
+   - Apply those patterns directly — do not ask the user to describe the style
+3. If neither exists, proceed with the feature spec's visual guidance or ask the user for a style preference
+
+Apply the design language silently — don't narrate the process, just reflect it in Tailwind classes chosen.
+
 ## shadcn/ui First (MANDATORY)
 - Before creating ANY UI component, check if shadcn/ui has it: `ls src/components/ui/`
 - NEVER create custom implementations of: Button, Input, Select, Checkbox, Switch, Dialog, Modal, Alert, Toast, Table, Tabs, Card, Badge, Dropdown, Popover, Tooltip, Navigation, Sidebar, Breadcrumb
